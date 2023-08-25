@@ -11,6 +11,7 @@ namespace ApiCurso.Services
             _courseRepository = courseRepository;
         }
 
+        //Servicio que trae todos los cursos registrados
         public IEnumerable<Course> GetAll()
         {
             _courses = _courseRepository.GetAll().ToList();
